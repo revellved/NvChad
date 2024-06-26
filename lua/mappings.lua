@@ -6,5 +6,6 @@ local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "gm", "<cmd> Mason <cr>", { desc = "mason" })
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
