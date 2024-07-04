@@ -5,8 +5,17 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers =
-  { "html", "cssls", "emmet_language_server", "tsserver", "pyright", "ruby_lsp", "rust_analyzer", "clangd" }
+local servers = {
+  "clangd",
+  "cssls",
+  "emmet_language_server",
+  "html",
+  "jdtls",
+  "pyright",
+  "rust_analyzer",
+  "solargraph",
+  "tsserver",
+}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
