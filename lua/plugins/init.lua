@@ -17,6 +17,39 @@ return {
   },
 
   {
+    "vigoux/LanguageTool.nvim",
+    opts = {
+      languagetool_server = "/usr/share/java/languagetool/languagetool-server.jar",
+    },
+  },
+
+  {
+    "rhysd/vim-grammarous",
+  },
+
+  {
+    "dpelle/vim-LanguageTool",
+    -- opts = {
+    --   langtool_cmd = "/usr/bin/langtool",
+    --   languagetool_jar = "/usr/share/java/languagetool/languagetool-server.jar",
+    -- },
+    -- lazy = true,
+    -- enabled = true,
+    -- config = function()
+    --   require("nvchad.configs.lspconfig").defaults()
+    --   require "configs.lspconfig"
+    --   require "configs.vim-LanguageTool"
+    -- end,
+  },
+
+  {
+    "Konfekt/vim-langtool",
+    -- opts = {
+    --   langtool_jar = "/usr/share/java/languagetool/languagetool-server.jar",
+    -- },
+  },
+
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {

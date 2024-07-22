@@ -18,6 +18,7 @@ local options = {
     shell = { "shfmt" },
     ts = { "prettier" },
     typescript = { "prettier" },
+    vue = { "prettier" },
   },
 
   format_on_save = {
